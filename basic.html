@@ -6,10 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #introduce,#subject,#hire,#project,#situation{
+        #introduce,#subject,#hire,#project,#situation,#environment,#disagree,#relationships,#MTX,#years,#MSPlan,#family{
             margin : 50px;
+            margin-bottom: 200px;
             background-color: aliceblue;
         }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+          }
+          
+          #myBtn:hover {
+            background-color: #555;
+          }
     </style>
 </head>
 <body>
@@ -20,10 +40,30 @@
             </a>
         </li>
         <li>
+            <a href="#MSPlan">
+                MS Plans
+            </a>
+        </li>
+        <li>
+            <a href="#family">
+                Family Background
+            </a>
+        </li>
+        <li>
+            <a href="#MTX">
+                About MTX
+            </a>
+        </li>
+        <li>
             <a href="#project">
                 Describe Project
             </a>
         </li>
+        <li>
+            <a href="#years">
+                5 years
+            </a>
+        </li>        
         <li>
             <a href="#hire">
                 Why should i hire u?
@@ -37,6 +77,21 @@
         <li>
             <a href="#situation">
                 Worst situation
+            </a>
+        </li>
+        <li>
+            <a href="#environment">
+                work environment
+            </a>
+        </li>
+        <li>
+            <a href="#relationships">
+                relationships b/w co-workers
+            </a>
+        </li>
+        <li>
+            <a href="#disagree">
+                disagree your project ideas
             </a>
         </li>
     </ul>
@@ -67,6 +122,38 @@
         This is pretty much about myself.
         Thank you Sir.
     </div>
+    <div id="family">
+        Thank you for the opportunity you gave me to talk about my 
+family. 
+To begin with, my family has got 5 members including me.
+
+To start with my mother, she is the sweetest person and 
+the kindest hearted woman I have ever seen. 
+She is creative, helpful and loving in nature. 
+She is housewife besides taking great care of her family.
+
+My father is the cornerstone of our family and works 
+hard to win the bread for our family. 
+He is a great mentor for all of us. 
+He works as a Farmer,he is a super dad, 
+our inspiration and guide. 
+He is our hero, friend and mentor.
+
+My brother has completed his B.tech and waiting for
+GRE results to study in abroad.
+
+    </div>
+    <div id="MTX">
+        MTX Group is a global technology consulting firm powered by the Maverick Quantum Artificial Intelligence Platform that enables organization to modernize through digital transformation and strategy.
+        <br>
+        MTX improves decision making for organizations with speed and quality by leveraging the mavq ai platform and partnering with other leading cloud technologies such as Salesforce, google cloud, and Amazon web services (AWS).
+        <br>
+        It is both product and service based company there are many products such as intergrated child care solution,mtx connect, learning management system, mavQ AI of which I liked mavQ AI
+        <br>
+        mavQ provides an AI driven Low Code platform that allows enterprises to imagine, innovate, and transform their digital journey.
+        <br>
+        I am inspired by the way MTX is into all fields expanding itself and making a mark in the software and hence I want to prove myself and I feel like MTX is providing me the best opportunity to show myself.
+    </div>
     <div id="project">
         An application where users can share rides with someone
         going their way.The project was done with a team of 5 members. 
@@ -92,6 +179,9 @@
         so that I can contribute as much as 
         I can towards the growth and welfare of this great brand.
     </div>
+    <div id="years">
+        I am certain that the coming five years will be productive for me. Working in an esteemed organization with a positive work environment can be rewarding. I can picture myself growing to the position I am working on. I feel the values of this organization can be advantageous to my career.In return, I see myself utilizing my knowledge to yield better outcomes. The five years ahead are a guide to me. They would take me to a target where I can cherish the achievements along the road.
+    </div>
     <div id="subject">
         The subject i felt difficult was software engineering
         because mostly it was theoretical rather than practical.
@@ -109,5 +199,48 @@
         up myself to get good rank so that I can get a good rank
         in EAMCET.
     </div>
+    <div id="environment">
+        I have worked in different types of environments and enjoyed learning new things from each. I would say that while I don’t prefer a particular environment, I really like working with people who are committed to getting things done and who are passionate about their work.
+    </div>
+    <div id="relationships">
+        I had a best friend in my 10th class.
+        The more comfortable co-workers are around one other, the more confident they'll feel voicing opinions, brainstorming, and going along with new ideas, for example. This level of teamwork is essential to embrace change, create, and innovate. 
+        Friends at work are a necessity. If you work at least 40 hours a week, chances are, you spend more time with your colleagues than your friends and family each week. So it’s worth creating good work relationships.
+    </div>
+    <div id="disagree">
+        Conflict in teams is not unusual.
+        I would firstly want to know the underlying reason, why there is disagreement.
+        <img height="300px" src="https://qphs.fs.quoracdn.net/main-qimg-29ead2b10034779b9f4d77b169f94263-lq">
+    </div>
+
+    <div id="MSPlan">
+        Currently I don't have any plans any.
+        For now I need to give financial assistance to my family.
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+
+    </script>
 </body>
 </html>
